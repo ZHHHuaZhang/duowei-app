@@ -2,8 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="240dp"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#37B2D5">
+    android:background="#37B2D5"
+    android:layout_gravity="left">
 
     <ScrollView
         android:layout_width="0dp"
@@ -22,44 +22,22 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:id="@+id/jianpan"
-        android:background="@drawable/color_white"
-        android:layout_above="@+id/denglu"
-        android:layout_marginBottom="30dp"
+        android:layout_height="40dp"
+        android:id="@+id/yonghuming"
+        android:background="@null"
+        android:layout_above="@+id/jianpan_1"
+        android:layout_marginBottom="45dp"
         android:layout_marginLeft="60dp"
-        android:layout_marginRight="30dp"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/mamijianpan"
-        android:adjustViewBounds="true"
-        android:maxWidth="20dp"
-        android:maxHeight="20dp"
-        android:layout_alignLeft="@+id/jianpan_1"
-        android:layout_above="@+id/jianpan"
-        android:layout_marginBottom="5dp"/>
-    <EditText
+        android:layout_marginRight="30dp" />
+    <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:id="@+id/jianpan_1"
-        android:background="@drawable/color_white"
-        android:layout_above="@+id/denglu"
-        android:layout_marginBottom="30dp"
+        android:id="@+id/yonghuming_1"
+        android:background="#FFFFFF"
+        android:layout_above="@+id/jianpan_1"
+        android:layout_marginBottom="53dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:id="@+id/yonghuming"
-        android:background="@drawable/color_white"
-        android:layout_above="@+id/jianpan_1"
-        android:layout_marginBottom="50dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="30dp"/>
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -70,15 +48,37 @@
         android:layout_alignLeft="@+id/yonghuming_1"
         android:layout_above="@+id/yonghuming_1"
         android:layout_marginBottom="5dp"/>
+
     <EditText
         android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/jianpan"
+        android:background="@null"
+        android:inputType="textPassword"
+        android:layout_above="@+id/denglu"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="30dp"
+        />
+    <View
+        android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:id="@+id/yonghuming_1"
-        android:background="@drawable/color_white"
-        android:layout_above="@+id/jianpan_1"
-        android:layout_marginBottom="50dp"
+        android:id="@+id/jianpan_1"
+        android:background="#FFFFFF"
+        android:layout_above="@+id/denglu"
+        android:layout_marginBottom="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"/>
+        android:layout_marginRight="30dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mamijianpan"
+        android:adjustViewBounds="true"
+        android:maxWidth="20dp"
+        android:maxHeight="20dp"
+        android:layout_alignLeft="@+id/jianpan_1"
+        android:layout_above="@+id/jianpan_1"
+        android:layout_marginBottom="5dp"/>
 
     <ImageView
         android:id="@+id/zhaopian"

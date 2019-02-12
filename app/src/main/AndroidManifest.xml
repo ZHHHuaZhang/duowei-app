@@ -25,6 +25,11 @@
         <activity android:name=".one_fragment_three" />
         <activity android:name=".one_fragment_four" />
         <activity android:name=".main" />
+        <activity android:name=".three_fragment_a01" />
+        <activity android:name=".temper_type_test" />
+        <activity android:name=".SocialTest" />
+        <activity android:name=".SocialTestResult" />
+        <activity android:name=".AllTestStart"/>
     </application>
 
 </manifest>

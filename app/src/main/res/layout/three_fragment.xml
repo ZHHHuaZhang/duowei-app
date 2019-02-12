@@ -7,9 +7,72 @@
     tools:context=".three_fragment"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ImageButton
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="说了考不上，放弃吧"
-        android:textSize="40dp"/>
+        android:background="#00000000"
+        android:id="@+id/zhili_bt"
+        android:src="@drawable/zhili"
+        android:adjustViewBounds="true"
+        android:maxHeight="100dp"
+        android:maxWidth="80dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="10dp"/>
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:id="@+id/xingqu_bt"
+        android:src="@drawable/xingqu"
+        android:adjustViewBounds="true"
+        android:maxHeight="100dp"
+        android:maxWidth="80dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="10dp"/>
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:src="@drawable/qizhi"
+        android:id="@+id/qizhi_bt"
+        android:adjustViewBounds="true"
+        android:maxHeight="100dp"
+        android:maxWidth="80dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="10dp"/>
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:id="@+id/renge"
+        android:src="@drawable/renge"
+        android:adjustViewBounds="true"
+        android:maxHeight="100dp"
+        android:maxWidth="80dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="10dp"/>
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:id="@+id/shehui_bt"
+        android:src="@drawable/shehui"
+        android:adjustViewBounds="true"
+        android:maxHeight="100dp"
+        android:maxWidth="80dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="10dp"/>
+
+
 </LinearLayout>

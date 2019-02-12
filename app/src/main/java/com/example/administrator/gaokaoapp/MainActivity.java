@@ -12,15 +12,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
-        setContentView( R.layout.drawer );
-//        imageButton1 = findViewById( R.id.a2 );
-//        imageButton1.setOnClickListener( new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                imageButton1.setImageResource( R.drawable.start1 );
-//                Intent intent = new Intent( MainActivity.this,layout_main.class );
-//                startActivity(intent);
-//            }
-//        } );
+        setContentView( R.layout.activity_main );
+        imageButton1 = findViewById( R.id.a2 );
+        imageButton1.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               imageButton1.setImageResource( R.drawable.start1 );
+               Intent intent = new Intent( MainActivity.this,main.class );
+                startActivity(intent);
+           }
+      } );
     }
 }

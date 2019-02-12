@@ -9,21 +9,23 @@ import android.widget.ImageButton;
 
 public class layout_main extends AppCompatActivity {
 
-    //定义三个Fragment的对象~
+    //在这里写没有用！！！！！！！！！！！！！！！！！去main里面写！！！
+
+   /*//定义三个Fragment的对象~
     private one_fragment fg1;
     private two_fragment fg2;
     private three_fragment fg3;
     //定义三个图片按钮~
     private ImageButton imageButton1;
     private ImageButton imageButton2;
-    private ImageButton imageButton3;
+    private ImageButton imageButton3;*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.layout_main );
-        initView();
+        /*initView();*/
     }
-    private void initView() {
+    /* private void initView() {
         imageButton1 = findViewById( R.id.wode );
         imageButton2 = findViewById( R.id.gaokaozixun );
         imageButton3 = findViewById( R.id.zhuanyeceping );
@@ -110,5 +112,5 @@ public class layout_main extends AppCompatActivity {
             imageButton2.setImageResource(R.drawable.gaokaozixun_button);
             imageButton3.setImageResource(R.drawable.zhuanyeceping_button);
         }
-    };
+    };*/
 }
