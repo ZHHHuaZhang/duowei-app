@@ -9,7 +9,7 @@
 
 * 0212- 
 
-> (改动) 删除了 three_fragment_a0 活动, 用 AllTestStart活动进行了替代; 将R.string中对应各测试说明的字符串引用到AllTestStart中进行渲染
+> (改动) 删除了各测试说明活动, 用单个AllTestStart活动进行了替代; 将R.string中对应各测试说明的字符串引用到AllTestStart中进行渲染
 
 > 计划结果设计图也用上述方法，单活动渲染即可 
 
