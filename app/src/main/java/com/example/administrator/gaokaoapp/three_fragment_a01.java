@@ -6,7 +6,6 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -43,7 +42,7 @@ public class three_fragment_a01 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState  );
-        setContentView( R.layout.three_fragment_a01 );
+        setContentView( R.layout.activity_social_test );
         Resources res = this.getResources();
 
         final String[] arr_text1 = res.getStringArray(R.array.pf_text1);
@@ -83,31 +82,41 @@ public class three_fragment_a01 extends AppCompatActivity {
         btn_next.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                if(i==17){
-                    btn_next.setText("提交");
+                if (i==19){
+                    Intent intent=new Intent(three_fragment_a01.this,SocialTestResult.class);
+                    startActivity(intent);
                 }
-                if(i==18){
-                    Intent intent1=new Intent();
-                    intent1.setClass(three_fragment_a01.this,three_fragment_a02.class);
-                    startActivity(intent1);
-                }
-                if(answer[i]!='a'&&answer[i]!='b'&&answer[i]!='c'){
+                if(i<=19&&(answer[i]!='a'&&answer[i]!='b'&&answer[i]!='c')){
                     Toast.makeText(getApplicationContext(), "你并没有做出回答！",Toast.LENGTH_SHORT).show();;
                 }
-                else{
+                if(i<19 &&(answer[i]=='a'||answer[i]=='b'||answer[i]=='c')){
                     i++;
                     strinng(arr_text1,arr_text1_a,arr_text1_b,arr_text1_c,i);
                     button_color1(BTN_a,BTN_b,BTN_c);
                 }
+                if(i==19){
+                    btn_next.setText("提交");
+                }
+
+//                else{
+//                    i++;
+//                    strinng(arr_text1,arr_text1_a,arr_text1_b,arr_text1_c,i);
+//                    button_color1(BTN_a,BTN_b,BTN_c);
+//                    if (i==20){
+//                        Intent intent=new Intent(SocialTest.this,SocialTestResult.class);
+//                        startActivity(intent);
+//                    }
+//                }
 
 
             }
         });
+
         BTN_a.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 answer[i] = 'a';
-               button_color(BTN_a,BTN_b,BTN_c);
+                button_color(BTN_a,BTN_b,BTN_c);
             }
         });
         BTN_b.setOnClickListener(new View.OnClickListener(){
