@@ -18,8 +18,8 @@ public class temper_type_test extends AppCompatActivity implements View.OnClickL
     private int curCount = 0;
     private int maxCount = 0;
     private int[] notedChoose = new int[60];
-    private String originalColor = "#dcf2fa";
-    private String chosenColor = "#ffff50";
+    private String originalColor = "#E6E6FA";
+    private String chosenColor = "#7FFFD4";
     private ViewGroup.LayoutParams lpParent;
     private ViewGroup.LayoutParams lpChild;
     private int eachProgress = 0;
@@ -41,8 +41,12 @@ public class temper_type_test extends AppCompatActivity implements View.OnClickL
             allClickableView[i].setOnClickListener(this);
         }
         for(int i=0; i<notedChoose.length; i++){
+            //[test]
+//            notedChoose[i] = (int)Math.round(  2 - Math.random()*4);
             notedChoose[i] = 10;
         }
+        //[test]
+        //findViewById( R.id.fin_q ).setVisibility( View.VISIBLE );
         progressAll = findViewById(R.id.progress_all);
         progress = findViewById(R.id.progress);
         lpParent = progressAll.getLayoutParams();
@@ -52,6 +56,14 @@ public class temper_type_test extends AppCompatActivity implements View.OnClickL
         questionDes = findViewById(R.id.question_desc);
         curCountShow = findViewById(R.id.current_count);
         answerChooser = findViewById(R.id.answer_chooser);
+        findViewById( R.id.fanhui_bt ).setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent( temper_type_test.this, main.class );
+                i.putExtra( "back", "true" );
+                startActivity(i);
+            }
+        } );
     }
 
     public void dynamicMesRefresh(){
@@ -96,7 +108,7 @@ public class temper_type_test extends AppCompatActivity implements View.OnClickL
                 case R.id.fin_q: {
                     if(notedChoose[curCount] != 10){
                         dynamicMesRefresh();
-                        Intent i = new Intent(temper_type_test.this, SocialTestResult.class);
+                        Intent i = new Intent(temper_type_test.this, AllResult.class);
                         i.putExtra("answer-temper", notedChoose);
                         startActivity(i);
                     }

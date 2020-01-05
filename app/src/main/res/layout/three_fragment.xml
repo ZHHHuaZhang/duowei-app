@@ -74,5 +74,17 @@
         android:layout_marginRight="12dp"
         android:layout_marginBottom="10dp"/>
 
+    <Button
+        android:id="@+id/submit_per_entrance"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:background="#9af"
+        android:text="录取概率计算"
+        android:textColor="#fff"
+        android:textSize="20dp"/>
+
 
 </LinearLayout>

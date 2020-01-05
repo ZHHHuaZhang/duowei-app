@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TableRow;
+import android.widget.Toast;
 
 public class main extends AppCompatActivity {
     //定义三个Fragment的对象~
@@ -33,8 +35,12 @@ public class main extends AppCompatActivity {
         //让EditText出现的软键盘老实点~
         getWindow().setSoftInputMode( WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN );
 
+
         initView();
         initcehualan();
+        if(getIntent().hasExtra( "back" )){
+            imageButton3.performClick();
+        }
     }
 
     //通过按钮启动侧滑栏~
