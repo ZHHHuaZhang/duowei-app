@@ -84,7 +84,7 @@ public class AdmitLine extends AppCompatActivity implements View.OnClickListener
             }
         }
         double lineLA = lineA - (10 + Math.random()*20);
-        Toast.makeText(this,mark+"--"+lineA+"--"+lineLA,Toast.LENGTH_LONG).show();
+        //Toast.makeText(this,mark+"--"+lineA+"--"+lineLA,Toast.LENGTH_LONG).show();
         double percent = (mark-lineLA)<0?0:(mark-lineLA)/(lineA-lineLA)*0.5;
         percent = percent>0.5?1:percent+0.5;
         NumberFormat nf = NumberFormat.getPercentInstance();

@@ -15,7 +15,7 @@
         <include layout="@layout/layout_main"/>
 
         <!--菜单界面的布局-->
-        <include layout="@layout/layout_menu_login"/>
+        <include layout="@layout/layout_menu_login" android:id="@+id/drawer"/>
     </android.support.v4.widget.DrawerLayout>
 
 </LinearLayout>

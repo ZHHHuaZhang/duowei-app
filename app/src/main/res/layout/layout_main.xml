@@ -8,16 +8,12 @@
 
     android:orientation="vertical">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#000000"></View>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        android:background="#37B2D5">
+        android:background="#37B2D5"
+        android:weightSum="2">
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -37,14 +33,17 @@
             android:layout_height="50dp"
             android:orientation="horizontal"
             android:background="#37B2D5"
-            android:layout_weight="1">
+            android:gravity="center"
+            android:layout_weight="1.9"
+            android:weightSum="3">
 
             <ImageButton
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:id="@+id/wode"
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/wode_button"
+                android:src="@drawable/p"
                 android:maxWidth="22dp"
                 android:maxHeight="22dp"
                 android:adjustViewBounds="true"
@@ -54,11 +53,12 @@
                 android:layout_marginRight="20dp"/>
 
             <ImageButton
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:id="@+id/gaokaozixun"
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/gaokaozixun_button"
+                android:src="@drawable/g"
                 android:maxWidth="22dp"
                 android:maxHeight="22dp"
                 android:adjustViewBounds="true"
@@ -68,11 +68,12 @@
                 android:layout_marginRight="20dp"/>
 
             <ImageButton
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:id="@+id/zhuanyeceping"
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/zhuanyeceping_button"
+                android:src="@drawable/m"
                 android:maxWidth="22dp"
                 android:maxHeight="22dp"
                 android:adjustViewBounds="true"
@@ -82,18 +83,6 @@
                 android:layout_marginRight="20dp"/>
         </LinearLayout>
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/sousuolan"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/sousuolan_button"
-            android:maxWidth="100dp"
-            android:maxHeight="60dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitStart"
-            android:background="#00000000"
-            android:layout_marginRight="10dp"/>
     </LinearLayout>
 
     <FrameLayout

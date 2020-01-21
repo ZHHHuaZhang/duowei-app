@@ -40,6 +40,8 @@ public class AllResult extends AppCompatActivity {
     int Investigation_rank=4;
     int art_rank=5;
 
+    public static String[] resultExtra = {"iq", "like", "temper", "pf", "society"};
+
     class HtmlShow{
         @SuppressLint("JavascriptInterface")
         private String str;
@@ -121,6 +123,7 @@ public class AllResult extends AppCompatActivity {
             int[] answer = getType.getIntArrayExtra( "answer-bpm" );
             rT.setText( "瑞文智力测试" );
             bpmAnswerHandle(answer);
+            resultExtra[0] = t1.getText().toString() + "\n\n\t" + t2.getText().toString();
             again.setOnClickListener( new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -141,6 +144,7 @@ public class AllResult extends AppCompatActivity {
             char[] answer = getType.getCharArrayExtra( "answer-16pf" );
             rT.setText( "人格类型测试" );
             pfAnswerHandle( answer );
+            resultExtra[3] = t1.getText().toString() + "\n\n\t" + t2.getText().toString();
             again.setOnClickListener( new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -162,6 +166,7 @@ public class AllResult extends AppCompatActivity {
             rT.setText( "职业兴趣测试" );
             char[] answer = getType.getCharArrayExtra( "answer-sds" );
             sdsAnswerHandle( answer );
+            resultExtra[1] = t1.getText().toString() + "\n\n\t" + t2.getText().toString();
             again.setOnClickListener( new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -182,6 +187,7 @@ public class AllResult extends AppCompatActivity {
             int[] answer = getType.getIntArrayExtra( "answer-temper" );
             rT.setText( "气质类型测试" );
             temperAnswerHandle(answer);
+            resultExtra[2] = t1.getText().toString() + "\n\n\t" + t2.getText().toString();
             again.setOnClickListener( new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -202,6 +208,7 @@ public class AllResult extends AppCompatActivity {
             char[] answer = getType.getCharArrayExtra( "answer-social" );
             rT.setText( "社会适应测试" );
             socialAnswerHandle(answer);
+            resultExtra[4] = t1.getText().toString() + "\n\n\t" + t2.getText().toString();
             again.setOnClickListener( new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -300,7 +307,7 @@ public class AllResult extends AppCompatActivity {
                 t1.setText("胆汁--多血--粘液混合型");
             }
         }
-        }
+    }
     //
 
     //social
@@ -477,7 +484,6 @@ public class AllResult extends AppCompatActivity {
         else{
             t1.setText( "智商低能，反应太慢" );
         }
-
 
     }
     //

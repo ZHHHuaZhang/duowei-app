@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#efefef"
+    android:weightSum="2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#37B2D5">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fanhui"
+            android:id="@+id/fanhui_bt"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:maxWidth="30dp"
+            android:maxHeight="30dp"
+            android:background="#00000000"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="反馈"
+            android:layout_toRightOf="@+id/fanhui_bt"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp" />
+    </RelativeLayout>
+
+
+
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:hint="test"
+            android:paddingHorizontal="20dp"
+            android:textAlignment="textStart"
+            android:layout_marginBottom="18dp"
+            android:background="#fff" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginHorizontal="60dp"
+            android:textColor="#cfcfcf"
+            android:background="@drawable/round_common_blue"
+            android:text="提交给多维团队"/>
+
+
+
+
+</LinearLayout>

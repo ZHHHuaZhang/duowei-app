@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginDrawer"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:background="#37B2D5"
+    android:layout_gravity="left">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"></ScrollView>
+
+    <View
+        android:id="@+id/top1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/zhaopian1"
+        android:src="@drawable/p3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/top1"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+
+        />
+    <TextView
+        android:id="@+id/name_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LEE MUMO"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/zhaopian1"
+        android:layout_alignBottom="@+id/zhaopian1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"/>
+
+    <ImageView
+        android:id="@+id/mymessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zhaopian1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="35dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="30dp"
+        android:maxWidth="30dp"
+        android:src="@drawable/mymessage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的消息"
+        android:textColor="#FFF"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/mymessage"
+        android:layout_alignBottom="@+id/mymessage"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"/>
+
+
+    <ImageView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/result"
+        android:adjustViewBounds="true"
+        android:maxWidth="30dp"
+        android:maxHeight="30dp"
+        android:layout_below="@+id/mymessage"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="评测成绩"
+        android:textColor="#FFF"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/result"
+        android:layout_alignBottom="@+id/result"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"/>
+
+    <ImageView
+        android:id="@+id/lishi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lishi2"
+        android:adjustViewBounds="true"
+        android:maxWidth="30dp"
+        android:maxHeight="30dp"
+        android:layout_below="@+id/result"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="浏览历史"
+        android:textColor="#FFF"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/lishi2"
+        android:layout_alignBottom="@+id/lishi2"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"/>
+
+
+    <ImageView
+        android:id="@+id/fuwu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fuwu"
+        android:adjustViewBounds="true"
+        android:maxWidth="30dp"
+        android:maxHeight="30dp"
+        android:layout_below="@+id/lishi2"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="在线客服"
+        android:textColor="#FFF"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/fuwu"
+        android:layout_alignBottom="@+id/fuwu"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"/>
+
+
+    <ImageView
+        android:id="@+id/fankui2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fankui2"
+        android:adjustViewBounds="true"
+        android:maxWidth="30dp"
+        android:maxHeight="30dp"
+        android:layout_below="@+id/fuwu"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="反馈"
+        android:textColor="#FFF"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/fankui2"
+        android:layout_alignBottom="@+id/fankui2"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"/>
+
+
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/setting2"
+        android:adjustViewBounds="true"
+        android:maxWidth="30dp"
+        android:maxHeight="30dp"
+        android:layout_below="@+id/fankui2"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置"
+        android:textColor="#FFF"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/setting"
+        android:layout_alignBottom="@+id/setting"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/setting"
+        android:layout_marginTop="50dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/yejian"
+        android:background="#00000000"
+        android:id="@+id/yejian"
+        android:adjustViewBounds="true"
+        android:maxWidth="30dp"
+        android:maxHeight="30dp"
+        android:scaleType="fitStart"
+        android:layout_below="@+id/setting"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yejian"
+        android:layout_alignLeft="@+id/yejian"
+        android:text="夜间"
+        android:textSize="10dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="5dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tuichu"
+        android:background="#00000000"
+        android:id="@+id/tuichu"
+        android:adjustViewBounds="true"
+        android:maxWidth="30dp"
+        android:maxHeight="27dp"
+        android:scaleType="fitStart"
+        android:layout_toRightOf="@+id/yejian"
+        android:layout_alignBottom="@+id/yejian"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tuichu"
+        android:layout_alignLeft="@+id/tuichu"
+        android:text="退出"
+        android:textSize="10dp"
+        android:layout_marginTop="5dp"/>
+
+
+
+</RelativeLayout>

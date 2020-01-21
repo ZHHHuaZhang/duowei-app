@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#efefef"
+    android:weightSum="2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#37B2D5">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fanhui"
+            android:id="@+id/fanhui_bt"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:maxWidth="30dp"
+            android:maxHeight="30dp"
+            android:background="#00000000"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测评结果"
+            android:layout_toRightOf="@+id/fanhui_bt"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/resultInfo_change"
+            android:layout_width="0dp"
+            android:text="\n这里是自我评测成绩的历史记录\n\n在自我评测完成之后正常显示"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#bfbfbf"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <Button
+                android:id="@+id/iq_check"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:text="智力"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:background="#37b1d4"/>
+
+            <Button
+                android:id="@+id/like_check"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:text="兴趣"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:background="#9f9f9f"/>
+
+            <Button
+                android:id="@+id/temper_check"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:text="气质"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:background="#9f9f9f"/>
+
+            <Button
+                android:id="@+id/pf_check"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:text="人格"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:background="#9f9f9f"/>
+
+            <Button
+                android:id="@+id/society_check"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:text="社会"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:background="#9f9f9f"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
